@@ -38,10 +38,14 @@ export function Header() {
         </nav>
 
         <div className={styles.actions}>
-          <a className={styles.phone} href="tel:+919810842481">
+          <a className={`${styles.phone} ${styles.desktopOnly}`} href="tel:+919810842481">
             {siteConfig.phones[0]}
           </a>
-          <Button onClick={() => setQuoteModalOpen(true)} variant="secondary">
+          <Button
+            className={styles.desktopOnly}
+            onClick={() => setQuoteModalOpen(true)}
+            variant="secondary"
+          >
             Request Callback
           </Button>
           <button

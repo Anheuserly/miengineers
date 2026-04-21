@@ -1,0 +1,95 @@
+.card {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.75rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
+    rgba(6, 22, 39, 0.82);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(18px);
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  color: rgba(222, 246, 255, 0.88);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.05;
+}
+
+.card p {
+  color: var(--color-text-secondary);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.field span {
+  color: rgba(222, 246, 255, 0.9);
+  font-size: 0.88rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  min-height: 3.2rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.04);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.field textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  transform: scale(1.01);
+  border-color: rgba(0, 201, 167, 0.45);
+  box-shadow: 0 0 0 3px rgba(0, 201, 167, 0.14);
+}
+
+.field small {
+  color: #ffd6d6;
+}
+
+.message {
+  color: rgba(223, 252, 245, 0.92);
+}
+
+@media (max-width: 767px) {
+  .twoColumn {
+    grid-template-columns: 1fr;
+  }
+}

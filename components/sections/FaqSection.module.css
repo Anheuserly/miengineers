@@ -1,0 +1,28 @@
+.list {
+  display: grid;
+  gap: 0.9rem;
+  width: min(100%, 52rem);
+  margin: 2rem auto 0;
+}
+
+.item {
+  padding: 1.1rem 1.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.35rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.item summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.item summary::-webkit-details-marker {
+  display: none;
+}
+
+.item p {
+  margin-top: 0.85rem;
+  color: var(--color-text-secondary);
+}

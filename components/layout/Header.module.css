@@ -87,6 +87,10 @@
   font-size: 0.95rem;
 }
 
+.desktopOnly {
+  display: inline-flex;
+}
+
 .menuButton {
   display: none;
   align-items: center;
@@ -158,8 +162,7 @@
     padding: 0.85rem;
   }
 
-  .actions :global(a),
-  .actions :global(button:not(.menuButton)) {
+  .desktopOnly {
     display: none;
   }
 
