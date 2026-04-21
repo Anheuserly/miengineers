@@ -14,7 +14,6 @@ export function FloatingActionButtons() {
         className={styles.action}
         href="tel:+919810842481"
       >
-        <span>📞</span>
         <span>Call</span>
       </a>
       <a
@@ -24,7 +23,6 @@ export function FloatingActionButtons() {
         rel="noreferrer"
         target="_blank"
       >
-        <span>💬</span>
         <span>WhatsApp</span>
       </a>
       <button
@@ -32,7 +30,6 @@ export function FloatingActionButtons() {
         onClick={() => setQuoteModalOpen(true)}
         type="button"
       >
-        <span>⚙️</span>
         <span>Quote</span>
       </button>
     </div>

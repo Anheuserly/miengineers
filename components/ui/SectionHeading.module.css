@@ -1,33 +1,30 @@
 .heading {
   display: grid;
-  gap: 1rem;
-  max-width: 42rem;
+  gap: 0.9rem;
+  max-width: 44rem;
 }
 
 .heading h2 {
-  font-size: clamp(2rem, 4vw, 3.8rem);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  color: var(--color-ink);
 }
 
 .heading p {
-  color: var(--color-text-secondary);
-  font-size: 1.02rem;
+  color: var(--color-ink-soft);
+  font-size: 1.04rem;
 }
 
 .eyebrow {
   display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
   width: fit-content;
   padding: 0.45rem 0.85rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 999px;
-  color: rgba(222, 246, 255, 0.88);
+  color: var(--color-primary);
   font-size: 0.82rem;
-  letter-spacing: 0.12em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.05);
+  background: #eaf1f6;
 }
 
 .center {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Manrope, Source_Sans_3 } from "next/font/google";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -10,13 +10,13 @@ import { siteConfig } from "@/lib/site-data";
 
 import "./globals.css";
 
-const bodyFont = Inter({
+const bodyFont = Source_Sans_3({
   variable: "--font-body",
   display: "swap",
   subsets: ["latin"],
 });
 
-const displayFont = Space_Grotesk({
+const displayFont = Manrope({
   variable: "--font-display",
   display: "swap",
   subsets: ["latin"],
@@ -25,7 +25,7 @@ const displayFont = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: `${siteConfig.companyName} | HVAC, Electrical & Fire Protection`,
+    default: `${siteConfig.companyName} | HVAC, Electrical and Fire Protection`,
     template: `%s | ${siteConfig.companyName}`,
   },
   description: siteConfig.description,

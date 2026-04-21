@@ -66,11 +66,11 @@ export function FeedbackForm() {
 
   return (
     <div className={styles.card}>
-      <span className={styles.eyebrow}>Customer Feedback</span>
-      <h3>Capture testimonials and post-service experience.</h3>
+      <span className={styles.eyebrow}>Service Feedback</span>
+      <h3>Share your experience after service completion.</h3>
       <p>
-        The upload flow is ready for an Appwrite bucket and feedback collection so
-        approved stories can feed a future testimonial section or admin dashboard.
+        This section gives the website a proper place for customer response and
+        future testimonials without crowding the main contact form.
       </p>
 
       <form className={styles.form} onSubmit={onSubmit}>

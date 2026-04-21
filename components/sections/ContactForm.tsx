@@ -50,11 +50,11 @@ export function ContactForm() {
 
   return (
     <div className={styles.card}>
-      <span className={styles.eyebrow}>Lead Capture</span>
-      <h3>Request a callback or detailed quote.</h3>
+      <span className={styles.eyebrow}>Request A Callback</span>
+      <h3>Tell us your requirement and our team will get in touch.</h3>
       <p>
-        Submit your requirement and the form is ready for Appwrite-backed storage,
-        queueing, and future admin workflows.
+        Share your service type, contact details, and basic requirement so MI
+        Engineers can respond with the right support.
       </p>
 
       <form className={styles.form} onSubmit={onSubmit}>
@@ -100,7 +100,7 @@ export function ContactForm() {
         </label>
 
         <Button fullWidth disabled={formSubmitting} type="submit">
-          {formSubmitting ? "Submitting..." : "Send Request"}
+          {formSubmitting ? "Submitting..." : "Send Inquiry"}
         </Button>
         {message ? <p className={styles.message}>{message}</p> : null}
       </form>

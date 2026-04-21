@@ -1,0 +1,24 @@
+.detailsSection {
+  gap: 1.5rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.feedbackWrap {
+  width: min(100%, 42rem);
+}
+
+@media (max-width: 1023px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .feedbackWrap {
+    width: 100%;
+  }
+}
