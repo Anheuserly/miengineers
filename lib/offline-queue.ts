@@ -1,12 +1,12 @@
 export type QueuedSubmission =
   | {
       kind: "contact";
-      payload: Record<string, string>;
+      payload: Record<string, string | number | boolean>;
       createdAt: string;
     }
   | {
       kind: "feedback";
-      payload: Record<string, string | number>;
+      payload: Record<string, string | number | boolean>;
       createdAt: string;
     };
 

@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ChangeEvent, useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 
 import { useLeadForm } from "@/hooks/useLeadForm";
 import { useLeadStore } from "@/store/leadStore";
@@ -20,8 +20,8 @@ export function FeedbackForm() {
 
   const {
     register,
+    control,
     setValue,
-    watch,
     handleSubmit,
     reset,
     formState: { errors },
@@ -36,7 +36,10 @@ export function FeedbackForm() {
     },
   });
 
-  const rating = watch("rating");
+  const rating = useWatch({
+    control,
+    name: "rating",
+  });
 
   const onFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];

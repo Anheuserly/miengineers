@@ -18,7 +18,7 @@ export const siteConfig = {
   companyName: "MI Engineers & Services",
   owner: "Mohd. Imran",
   tagline: "HVAC • Electrical • Fire Protection Solutions",
-  siteUrl: "https://miengineers.in",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://miengineers.in",
   description:
     "Premium MEP, HVAC, electrical, and fire protection services for commercial and residential projects across Delhi NCR.",
   email: "contact.miengineers@gmail.com",

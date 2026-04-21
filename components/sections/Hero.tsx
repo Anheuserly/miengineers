@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Transition } from "framer-motion";
 
 import { siteConfig } from "@/lib/site-data";
 import { createWhatsAppHref } from "@/lib/utils";
@@ -9,7 +9,7 @@ import { useUiStore } from "@/store/uiStore";
 import { Button } from "../ui/Button";
 import styles from "./Hero.module.css";
 
-const floatingTransition = {
+const floatingTransition: Transition = {
   duration: 3,
   repeat: Number.POSITIVE_INFINITY,
   repeatType: "reverse" as const,

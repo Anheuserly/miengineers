@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MI Engineers Website
 
-## Getting Started
+Premium App Router website for MI Engineers & Services, focused on HVAC, electrical works, fire protection systems, lead capture, and local SEO.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js App Router
+- React + TypeScript
+- CSS Modules + global design tokens
+- Framer Motion
+- Zustand
+- React Hook Form + Zod
+- TanStack Query
+- Appwrite-ready client utilities
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Copy `.env.example` to `.env.local` and fill the Appwrite values.
+2. Install dependencies with `npm install`.
+3. Start the dev server with `npm run dev`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+- `npm run dev`
+- `npm run lint`
+- `npm run typecheck`
+- `npm run build`
 
-To learn more about Next.js, take a look at the following resources:
+## Appwrite notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If Appwrite environment variables are missing, contact and feedback submissions are queued locally in the browser so the UI still works during development. Add the real Appwrite project, database, collection, and bucket IDs to enable live submissions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Implemented areas
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Premium glassmorphism landing page with motion-rich hero
+- Service category tabs and specialization showcase
+- Trust counters and brand marquee
+- Contact, quick-quote, and feedback capture flows
+- Local business and FAQ JSON-LD
+- `robots.txt` and `sitemap.xml`
